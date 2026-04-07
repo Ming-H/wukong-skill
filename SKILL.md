@@ -202,7 +202,7 @@ triggers:
 
 ```bash
 # 推荐
-npx skills add alchaincyf/wukong-skill
+npx skills add Ming-H/wukong-skill
 
 # 或手动
 cd wukong-skill && chmod +x install.sh && ./install.sh

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Installation script for wukong-skill
- * Runs automatically when: npx skills add alchaincyf/wukong-skill
+ * Runs automatically when: npx skills add Ming-H/wukong-skill
  */
 
 const fs = require('fs');

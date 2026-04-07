@@ -1,6 +1,6 @@
 #!/bin/bash
 # npx skills add command wrapper for wukong-skill
-# This allows users to run: npx skills add alchaincyf/wukong-skill
+# This allows users to run: npx skills add Ming-H/wukong-skill
 
 set -e
 

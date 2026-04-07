@@ -1,9 +1,9 @@
 # Wukong Skill - Monkey King's 72 Transformations
 
 [![npm version](https://img.shields.io/npm/v/wukong-skill.svg)](https://www.npmjs.com/package/wukong-skill)
-[![license](https://img.shields.io/npm/l/wukong-skill.svg)](https://github.com/alchaincyf/wukong-skill/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/wukong-skill.svg)](https://github.com/Ming-H/wukong-skill/blob/main/LICENSE)
 [![node](https://img.shields.io/node/v/wukong-skill.svg)](https://nodejs.org/)
-[![GitHub stars](https://img.shields.io/github/stars/alchaincyf/wukong-skill?style=social)](https://github.com/alchaincyf/wukong-skill)
+[![GitHub stars](https://img.shields.io/github/stars/Ming-H/wukong-skill?style=social)](https://github.com/Ming-H/wukong-skill)
 
 > **I am the Great Sage Equal to Heaven, Sun Wukong.** One Skill, seventy-two transformations. Every transformation is a person, not a tool.
 
@@ -18,7 +18,7 @@
 ### Option 1: Recommended -- Using npx skills add (Global Install)
 
 ```bash
-chmod +x install.sh && npx skills add alchaincyf/wukong-skill
+chmod +x install.sh && npx skills add Ming-H/wukong-skill
 ```
 
 ### Option 2: Manual Install
@@ -32,7 +32,7 @@ chmod +x install.sh
 ### Option 3: Clone from GitHub
 
 ```bash
-git clone https://github.com/alchaincyf/wukong-skill.git
+git clone https://github.com/Ming-H/wukong-skill.git
 cd wukong-skill
 chmod +x install.sh && ./install.sh
 ```

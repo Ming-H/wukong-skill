@@ -56,7 +56,7 @@ function showHelp() {
   log('  npx wukong-skill status     # Check if installed', 'reset');
   log('');
   log('Quick Start:', 'yellow');
-  log('  Just run: npx skills add alchaincyf/wukong-skill', 'green');
+  log('  Just run: npx skills add Ming-H/wukong-skill', 'green');
   log('');
 }
 
@@ -267,7 +267,7 @@ function checkStatus() {
     log('❌ wukong-skill is not installed', 'red');
     log('');
     log('To install, run: npx wukong-skill install', 'yellow');
-    log('Or: npx skills add alchaincyf/wukong-skill', 'yellow');
+    log('Or: npx skills add Ming-H/wukong-skill', 'yellow');
   }
 }
 

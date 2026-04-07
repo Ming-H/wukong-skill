@@ -30,11 +30,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alchaincyf/wukong-skill.git"
+    "url": "https://github.com/Ming-H/wukong-skill.git"
   },
-  "homepage": "https://github.com/alchaincyf/wukong-skill#readme",
+  "homepage": "https://github.com/Ming-H/wukong-skill#readme",
   "bugs": {
-    "url": "https://github.com/alchaincyf/wukong-skill/issues"
+    "url": "https://github.com/Ming-H/wukong-skill/issues"
   },
   "engines": {
     "node": ">=14.0.0"

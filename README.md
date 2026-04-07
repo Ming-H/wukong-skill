@@ -13,7 +13,7 @@
 ### 方法一：推荐 — 使用 npx skills add（全局安装）
 
 ```bash
-chmod +x install.sh && npx skills add alchaincyf/wukong-skill
+chmod +x install.sh && npx skills add Ming-H/wukong-skill
 ```
 
 ### 方法二：手动安装
@@ -27,7 +27,7 @@ chmod +x install.sh
 ### 方法三：从 GitHub 克隆
 
 ```bash
-git clone https://github.com/alchaincyf/wukong-skill.git
+git clone https://github.com/Ming-H/wukong-skill.git
 cd wukong-skill
 chmod +x install.sh && ./install.sh
 ```
