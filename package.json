@@ -1,0 +1,52 @@
+{
+  "name": "wukong-skill",
+  "version": "5.0.0",
+  "description": "齐天大圣·七十二变 | Monkey King's 72 Transformations — Every transformation is a person, not a tool. Fun-first character switcher for Claude Code",
+  "bin": {
+    "wukong-skill": "./cli.js",
+    "skills-add": "./bin/skills-add.sh"
+  },
+  "scripts": {
+    "install": "node scripts/install.js",
+    "postinstall": "node scripts/postinstall.js",
+    "prepublishOnly": "node scripts/validate.js"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skill",
+    "wukong",
+    "monkey-king",
+    "transformations",
+    "ai",
+    "divination",
+    "distillation",
+    "persona",
+    "roleplay",
+    "companionship",
+    "entertainment"
+  ],
+  "author": "wukong-skill contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alchaincyf/wukong-skill.git"
+  },
+  "homepage": "https://github.com/alchaincyf/wukong-skill#readme",
+  "bugs": {
+    "url": "https://github.com/alchaincyf/wukong-skill/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "install.sh",
+    "cli.js",
+    "references/",
+    "personas/",
+    "bin/",
+    "scripts/"
+  ]
+}
