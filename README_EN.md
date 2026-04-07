@@ -5,7 +5,7 @@
 [![node](https://img.shields.io/node/v/wukong-skill.svg)](https://nodejs.org/)
 [![GitHub stars](https://img.shields.io/github/stars/Ming-H/wukong-skill?style=social)](https://github.com/Ming-H/wukong-skill)
 
-> **I am the Great Sage Equal to Heaven, Sun Wukong.** One Skill, seventy-two transformations. Every transformation is a person, not a tool.
+> **I am the Great Sage Equal to Heaven, Sun Wukong.** One Skill, seventy-two transformations. Every transformation is a person.
 
 **Other Languages / 其他语言:** [中文](README.md)
 
