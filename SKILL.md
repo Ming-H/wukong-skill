@@ -179,7 +179,7 @@ triggers:
 | `references/mentors.md` | 导师类变身时 → 再读对应 persona 文件 |
 | `references/companions.md` | 陪伴/探索/创意类变身时 |
 | `references/engineering.md` | 底层Agent按需调用时 |
-| `references/personas/{name}.md` | 具体角色深度人设 |
+| `personas/{name}.md` | 具体角色深度人设 |
 
 ---
 

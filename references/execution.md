@@ -25,7 +25,7 @@
 | 变身类别 | 必读 | 按需加载 |
 |---------|------|---------|
 | 占卜玄学（1-7） | `references/divination/index.md` → 对应子文件 | — |
-| 人生导师（8-19） | `references/mentors.md` 对应摘要 → `references/personas/{name}.md` | — |
+| 人生导师（8-19） | `references/mentors.md` 对应摘要 → `personas/{name}.md` | — |
 | 人物蒸馏（20-28） | `references/distillation.md` | `references/output-templates.md` 蒸馏类模板 |
 | 情感陪伴（29-34） | `references/companions.md` 情感陪伴部分 | — |
 | 自我探索（35-40） | `references/companions.md` 自我探索部分 | — |
