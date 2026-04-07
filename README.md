@@ -1,4 +1,4 @@
-# 齐天大圣·七十二变 (Monkey King's 72 Transformations)
+# 悟空，skill
 
 > **俺乃齐天大圣孙悟空。** 一个 Skill，七十二般变化。每一个变身都是一个人，不是一把锤子。
 

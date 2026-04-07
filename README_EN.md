@@ -1,4 +1,4 @@
-# Wukong Skill - Monkey King's 72 Transformations
+# 悟空，skill
 
 [![npm version](https://img.shields.io/npm/v/wukong-skill.svg)](https://www.npmjs.com/package/wukong-skill)
 [![license](https://img.shields.io/npm/l/wukong-skill.svg)](https://github.com/Ming-H/wukong-skill/blob/main/LICENSE)
