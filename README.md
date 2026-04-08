@@ -155,7 +155,7 @@ chmod +x install.sh && ./install.sh
 ```
 用户：我总感觉工作做不完，很焦虑
 
-大圣：好！俺老孙变作「教员」，帮师傅分析分析！
+大圣：好！俺老孙变作「教员」，帮施主分析分析！
 
 教员：这个问题嘛，要看到主要矛盾在哪里。
       你说工作做不完——是事情真的多，还是你没抓住重点？
@@ -174,7 +174,7 @@ chmod +x install.sh && ./install.sh
 ```
 用户：帮我蒸馏一下我暗恋的人
 
-大圣：得令！俺老孙变作「暗恋」，帮师傅看看ta的心思！
+大圣：得令！俺老孙变作「暗恋」，帮施主看看ta的心思！
 
 暗恋：说吧，ta叫什么？你们是什么关系？
 用户：就叫小A吧，我们是同事。ta喜欢喝手冲咖啡，说话很温柔……
@@ -236,7 +236,7 @@ wukong-skill/
 ├── SKILL.md                                    # 主入口 v5（精简路由器）
 ├── README.md                                   # 本文件
 ├── install.sh                                  # 安装脚本
-├── personas/                                   # 独立人设文件（Top 10角色）
+├── personas/                                   # 独立人设文件（16个角色）
 │   ├── chairman.md                             # 教员
 │   ├── confucius.md                            # 孔子
 │   ├── zhuangzi.md                             # 庄子
@@ -246,7 +246,13 @@ wukong-skill/
 │   ├── maxing.md                               # 骂醒
 │   ├── jobs.md                                 # 乔布斯
 │   ├── taleb.md                                # 塔勒布
-│   └── luoxiang.md                             # 罗翔
+│   ├── luoxiang.md                             # 罗翔
+│   ├── guimi.md                                # 闺蜜
+│   ├── jiuyou.md                               # 酒友
+│   ├── qianren.md                              # 前任模拟
+│   ├── socrates.md                             # 苏格拉底
+│   ├── munger.md                               # 芒格
+│   └── luxun.md                                # 鲁迅
 └── references/
     ├── routing.md                              # 三通道路由逻辑
     ├── execution.md                            # 变身执行流程
@@ -257,6 +263,7 @@ wukong-skill/
     ├── distillation.md                          # 人物蒸馏+造物功法
     ├── mentors.md                               # 人生导师总览
     ├── companions.md                            # 情感陪伴+自我探索+创意玩乐
+    ├── tour.md                                  # 新手引导流程
     ├── engineering.md                           # 底层工程参考能力
     └── divination/                              # 占卜玄学类（拆分）
         ├── index.md                             # 占卜路由索引

@@ -245,7 +245,7 @@ wukong-skill/
 ├── SKILL.md                                    # Main entry point v5 (slim router)
 ├── README.md                                   # This file
 ├── install.sh                                  # Install script
-├── personas/                                   # Dedicated persona files (Top 10 characters)
+├── personas/                                   # Dedicated persona files (16 characters)
 │   ├── chairman.md                             # 教员
 │   ├── confucius.md                            # Confucius
 │   ├── zhuangzi.md                             # Zhuangzi
@@ -255,7 +255,13 @@ wukong-skill/
 │   ├── maxing.md                               # Wake-Up Call
 │   ├── jobs.md                                 # Steve Jobs
 │   ├── taleb.md                                # Nassim Taleb
-│   └── luoxiang.md                             # Luo Xiang
+│   ├── luoxiang.md                             # Luo Xiang
+│   ├── guimi.md                                # Bestie
+│   ├── jiuyou.md                               # Drinking Buddy
+│   ├── qianren.md                              # Ex-Partner Simulation
+│   ├── socrates.md                             # Socrates
+│   ├── munger.md                               # Charlie Munger
+│   └── luxun.md                                # Lu Xun
 └── references/
     ├── routing.md                              # Three-channel routing logic
     ├── execution.md                            # Transformation execution flow
@@ -266,6 +272,7 @@ wukong-skill/
     ├── distillation.md                          # Persona distillation + creation factory
     ├── mentors.md                              # Life mentor overview
     ├── companions.md                            # Emotional companionship + self-discovery + creative play
+    ├── tour.md                                  # Guided tour for new users
     ├── engineering.md                           # Underlying engineering capabilities
     └── divination/                              # Mysticism and divination (split)
         ├── index.md                             # Divination routing index
