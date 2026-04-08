@@ -36,6 +36,31 @@ function validate() {
     'scripts'
   ];
 
+  const divinationSubfiles = [
+    'references/divination/index.md',
+    'references/divination/bazi.md',
+    'references/divination/yinyuan.md',
+    'references/divination/qimen.md',
+    'references/divination/ziwei.md',
+    'references/divination/tarot.md',
+    'references/divination/xingzuo.md',
+    'references/divination/yijing.md'
+  ];
+
+  // Reference files mentioned in SKILL.md that must exist
+  const expectedReferences = [
+    'references/routing.md',
+    'references/execution.md',
+    'references/quality.md',
+    'references/seventy-two-transformations.md',
+    'references/output-templates.md',
+    'references/distillation.md',
+    'references/mentors.md',
+    'references/companions.md',
+    'references/engineering.md',
+    'references/transformation-framework.md'
+  ];
+
   let hasErrors = false;
 
   log('🔍 Validating wukong-skill package...', 'yellow');
@@ -62,6 +87,32 @@ function validate() {
       log(`  ✓ ${dir}/`, 'green');
     } else {
       log(`  ✗ ${dir}/ - MISSING`, 'red');
+      hasErrors = true;
+    }
+  });
+
+  // Check divination subfiles
+  log('');
+  log('🔮 Checking divination subfiles...', 'reset');
+  divinationSubfiles.forEach(file => {
+    const filePath = path.join(PROJECT_ROOT, file);
+    if (fs.existsSync(filePath)) {
+      log(`  ✓ ${file}`, 'green');
+    } else {
+      log(`  ✗ ${file} - MISSING`, 'red');
+      hasErrors = true;
+    }
+  });
+
+  // Check reference file integrity
+  log('');
+  log('📚 Checking reference file integrity...', 'reset');
+  expectedReferences.forEach(file => {
+    const filePath = path.join(PROJECT_ROOT, file);
+    if (fs.existsSync(filePath)) {
+      log(`  ✓ ${file}`, 'green');
+    } else {
+      log(`  ✗ ${file} - MISSING`, 'red');
       hasErrors = true;
     }
   });
@@ -110,6 +161,56 @@ function validate() {
     }
   }
 
+  // Version sync check
+  log('');
+  log('🔄 Checking version sync...', 'reset');
+  if (fs.existsSync(skillPath) && fs.existsSync(pkgPath)) {
+    const skillContent = fs.readFileSync(skillPath, 'utf8');
+    const skillVersionMatch = skillContent.match(/version:\s*["']([^"']+)["']/);
+    const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
+
+    if (skillVersionMatch && pkg.version) {
+      if (skillVersionMatch[1] === pkg.version) {
+        log(`  ✓ Version synced: v${pkg.version}`, 'green');
+      } else {
+        log(`  ✗ Version mismatch: SKILL.md=${skillVersionMatch[1]}, package.json=${pkg.version}`, 'red');
+        hasErrors = true;
+      }
+    } else {
+      log('  ⚠ Could not read version from one or both files', 'yellow');
+    }
+  }
+
+  // Trigger dedup check (only within frontmatter)
+  log('');
+  log('🔤 Checking trigger uniqueness...', 'reset');
+  if (fs.existsSync(skillPath)) {
+    const skillContent = fs.readFileSync(skillPath, 'utf8');
+    // Extract only the frontmatter section (between first two ---)
+    const fmMatch = skillContent.match(/^---\n([\s\S]*?)\n---/);
+    if (fmMatch) {
+      const frontmatter = fmMatch[1];
+      const triggerMatches = frontmatter.match(/^\s*-\s*"([^"]+)"\s*$/gm);
+      if (triggerMatches) {
+        const triggers = triggerMatches.map(t => t.replace(/^\s*-\s*"/, '').replace(/"\s*$/, '').trim());
+        const seen = new Set();
+        const duplicates = [];
+        triggers.forEach(t => {
+          if (seen.has(t)) duplicates.push(t);
+          seen.add(t);
+        });
+        if (duplicates.length > 0) {
+          log(`  ✗ Duplicate triggers: ${duplicates.join(', ')}`, 'red');
+          hasErrors = true;
+        } else {
+          log(`  ✓ All ${triggers.length} triggers are unique`, 'green');
+        }
+      } else {
+        log('  ⚠ No triggers found in frontmatter', 'yellow');
+      }
+    }
+  }
+
   // Check executable permissions
   log('');
   log('🔐 Checking executable permissions...', 'reset');
@@ -133,6 +234,18 @@ function validate() {
       }
     }
   });
+
+  // Check personas directory has files
+  log('');
+  log('🎭 Checking personas...', 'reset');
+  const personasDir = path.join(PROJECT_ROOT, 'personas');
+  if (fs.existsSync(personasDir)) {
+    const personaFiles = fs.readdirSync(personasDir).filter(f => f.endsWith('.md'));
+    log(`  ✓ ${personaFiles.length} persona files found`, 'green');
+  } else {
+    log('  ✗ personas/ directory missing', 'red');
+    hasErrors = true;
+  }
 
   // Final result
   log('');
