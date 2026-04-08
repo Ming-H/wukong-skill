@@ -1,6 +1,6 @@
 {
   "name": "wukong-skill",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "齐天大圣·七十二变 | Monkey King's 72 Transformations — Every transformation is a person, not a tool. Fun-first character switcher for Claude Code",
   "bin": {
     "wukong-skill": "./cli.js",

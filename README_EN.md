@@ -245,7 +245,7 @@ wukong-skill/
 ├── SKILL.md                                    # Main entry point v5 (slim router)
 ├── README.md                                   # This file
 ├── install.sh                                  # Install script
-├── personas/                                   # Dedicated persona files (44 characters)
+├── personas/                                   # Dedicated persona files (53 characters, full coverage)
 │   ├── chairman.md                             # 教员
 │   ├── confucius.md                            # Confucius
 │   ├── zhuangzi.md                             # Zhuangzi

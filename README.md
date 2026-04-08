@@ -236,7 +236,7 @@ wukong-skill/
 ├── SKILL.md                                    # 主入口 v5（精简路由器）
 ├── README.md                                   # 本文件
 ├── install.sh                                  # 安装脚本
-├── personas/                                   # 独立人设文件（44个角色）
+├── personas/                                   # 独立人设文件（53个角色，全覆盖）
 │   ├── chairman.md                             # 教员
 │   ├── confucius.md                            # 孔子
 │   ├── zhuangzi.md                             # 庄子
