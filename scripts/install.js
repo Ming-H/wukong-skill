@@ -22,7 +22,8 @@ const colors = {
 };
 
 function log(message, color = 'reset') {
-  console.log(`${colors[color]}${message}${colors.reset}`);
+  const c = colors[color] || colors.reset;
+  console.log(`${c}${message}${colors.reset}`);
 }
 
 function ensureDirectoryExists(dirPath) {
