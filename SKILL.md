@@ -2,7 +2,7 @@
 name: wukong
 description: "齐天大圣·七十二变 | Monkey King's 72 Transformations — 每一个变身都是一个人，不是一把锤子。化身为算命先生、孔夫子、教员、暗恋对象、诗仙李白……跟他们聊天、玩耍、探索自己。模糊需求也触发：「我很迷茫」「帮我分析一下」「我想聊聊天」「我emo了」。说个大概意思，俺就知道该变什么身。"
 argument-hint: "[变身名 / intent]"
-version: "5.3.0"
+version: "5.3.1"
 user-invocable: true
 allowed-tools: Read, Write, Edit, Bash, Glob, Grep, Agent, WebSearch, WebFetch
 triggers:
