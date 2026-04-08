@@ -15,21 +15,13 @@
 
 ## Quick Install
 
-### Option 1: Recommended -- Using npx skills add (Global Install)
+### Option 1: Recommended -- Using npx skills add
 
 ```bash
-chmod +x install.sh && npx skills add Ming-H/wukong-skill
+npx skills add Ming-H/wukong-skill
 ```
 
-### Option 2: Manual Install
-
-```bash
-cd wukong-skill
-chmod +x install.sh
-./install.sh
-```
-
-### Option 3: Clone from GitHub
+### Option 2: Clone from GitHub
 
 ```bash
 git clone https://github.com/Ming-H/wukong-skill.git

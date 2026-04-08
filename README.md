@@ -10,21 +10,13 @@
 
 ## 快速安装
 
-### 方法一：推荐 — 使用 npx skills add（全局安装）
+### 方法一：推荐 — 使用 npx skills add
 
 ```bash
-chmod +x install.sh && npx skills add Ming-H/wukong-skill
+npx skills add Ming-H/wukong-skill
 ```
 
-### 方法二：手动安装
-
-```bash
-cd wukong-skill
-chmod +x install.sh
-./install.sh
-```
-
-### 方法三：从 GitHub 克隆
+### 方法二：从 GitHub 克隆
 
 ```bash
 git clone https://github.com/Ming-H/wukong-skill.git
